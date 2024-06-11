@@ -1,0 +1,165 @@
+body {
+    font-family: 'Calibri', sans-serif;
+    background-color: #A56C46;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #A56C46;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 24px;
+    margin: 10px 0 40px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.menu-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%; /* Lebar menu sebelumnya */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.menu-item p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.menu-item button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#about {
+    padding: 40px 20px;
+    background-color: #F3E1D1;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 0 0 20px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap; /* Mengatur agar item info bungkus saat tidak cukup lebar */
+    justify-content: space-around;
+}
+
+.info div {
+    width: 22%;
+    margin-bottom: 20px; /* Menambahkan margin bottom agar ada ruang antar info item */
+}
+
+.info p {
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.info a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #A56C46;
+    color: #fff;
+}
+
+.footer-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Media query untuk perangkat mobile dengan lebar maksimum 600px */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column; /* Menyusun elemen header secara vertikal di perangkat mobile */
+        align-items: center; /* Menengahkan elemen header di perangkat mobile */
+    }
+
+    nav ul {
+        display: flex; /* Mengatur menu agar tersusun secara horizontal */
+        justify-content: center; /* Membuat menu berada di tengah-tengah */
+        gap: 10px;
+    }
+
+    #menu {
+        flex-direction: column;
+        padding: 20px; /* Ubah padding agar sesuai dengan layout vertical */
+    }
+
+    .menu-item {
+        width: 100%; /* Menggunakan lebar penuh untuk perangkat mobile */
+    }
+
+    .info div {
+        width: 90%; /* Mengatur lebar item info menjadi lebih sempit di perangkat mobile */
+    }
+}

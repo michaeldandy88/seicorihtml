@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seicori Coffee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-xxz8t/A2pqUB5I3E2NGzlpDMSyKkh9L8LrFvm7oogOkFoy6V2VZcXjpGYl2cWJTJ" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <img src="logo-seicori.png" alt="Seicori Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#brand">Brand</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <img src="landing page.png" alt="landing" class="landing">
+        </section>
+        <section id="menu">
+            <div class="menu-item">
+                <img src="seicori2.jpg" alt="Es Kopi Rantau">
+                <h3>Es Kopi Rantau</h3>
+                <p>Kopi susu dengan cita rasa yang creamy</p>
+                <button onclick="lihatMenu('rantau')">Detail</button>
+                <div id="menu-rantau" style="display: none;">
+                    <h2>Harga Rp 13.000,00</h2>
+                    <i class="fa-coffee"></i>
+                </div>
+            </div>
+            <div class="menu-item" id="melayu" style="display: block;">
+                <img src="seicori3.jpg" alt="Es Kopi Rantau">
+                <h3>Es Milo Melayu</h3>
+                <p>Minuman dengan cita rasa coklat yang malt</p>
+                <button onclick="lihatMenu('melayu')">Detail</button>
+                <div id="menu-melayu" style="display: none;">
+                    <h2>Harga Rp 15.000,00</h2>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>Tentang Kami</h2>
+            <div class="info">
+                <div>
+                    <p>Website</p>
+                    <a href="https://seicori.id">www.seicori.id</a>
+                </div>
+                <div>
+                    <p>Social Media</p>
+                    <p>Instagram: <a href="https://instagram.com/seicori_" target="_blank">@seicori_</a></p>
+                </div>
+                <div>
+                    <p>Order App</p>
+                    <ul>
+                        <li>ShopeeFood</li>
+                        <li>GoFood</li>
+                        <li>GrabFood</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Jadwal Buka</p>
+                    <ul>
+                        <li>Ora - Oro Dawo: 07:00 - 23:00 WIB</li>
+                        <li>Kayutangan: 07:00 - 23:00 WIB</li>
+                        <li>Gajayana: 07:00 - 23:00 WIB</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="seicori4.jpg" alt="Seicori Coffee Shop" class="footer-image">
+        <p>&copy; 2023 Seicori Coffee. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
