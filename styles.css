@@ -15,7 +15,11 @@ header {
 }
 
 .logo {
-    height: 50px;
+    height: 70px;
+}
+.landing{
+    margin-bottom: 30px;
+    height: 200px;
 }
 
 nav ul {
@@ -62,7 +66,7 @@ nav ul li a {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    width: 45%; /* Lebar menu sebelumnya */
+    width: 35%; /* Lebar menu sebelumnya */
     margin-bottom: 20px;
     box-sizing: border-box;
 }
